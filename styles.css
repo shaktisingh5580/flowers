@@ -1,1 +1,116 @@
+body.not-loaded {
+    background-color: #000;
+    overflow: hidden;
+}
 
+.night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, #444, #000);
+}
+
+.flower {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.flower__leafs {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flower__leaf {
+    width: 20px;
+    height: 40px;
+    background: red;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+}
+
+.flower__leaf--1 {
+    transform: rotate(-45deg);
+    left: -10px;
+    top: 20px;
+}
+
+.flower__leaf--2 {
+    transform: rotate(45deg);
+    left: -10px;
+    top: 20px;
+}
+
+.flower__leaf--3 {
+    transform: rotate(-20deg);
+    left: 0;
+    top: 0;
+}
+
+.flower__leaf--4 {
+    transform: rotate(20deg);
+    left: 0;
+    top: 0;
+}
+
+.flower__white-circle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 40%;
+}
+
+.flower__light {
+    width: 5px;
+    height: 5px;
+    background: yellow;
+    border-radius: 50%;
+    position: absolute;
+    animation: blink 1s infinite;
+}
+
+.flower__light--1 { top: 30px; left: 50%; }
+.flower__light--2 { top: 40px; left: 45%; }
+.flower__light--3 { top: 40px; left: 55%; }
+.flower__light--4 { top: 50px; left: 50%; }
+.flower__light--5 { top: 60px; left: 45%; }
+.flower__light--6 { top: 60px; left: 55%; }
+.flower__light--7 { top: 70px; left: 50%; }
+.flower__light--8 { top: 80px; left: 45%; }
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.flower__line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 150px;
+    background: green;
+}
+
+.flower__line__leaf {
+    width: 6px;
+    height: 20px;
+    background: green;
+    position: absolute;
+}
+
+.flower__line__leaf--1 { top: 20px; left: -6px; transform: rotate(-45deg); }
+.flower__line__leaf--2 { top: 40px; left: -8px; transform: rotate(-30deg); }
+.flower__line__leaf--3 { top: 60px; left: -10px; transform: rotate(-15deg); }
+.flower__line__leaf--4 { top: 80px; left: 4px; transform: rotate(15deg); }
+.flower__line__leaf--5 { top: 100px; left: 6px; transform: rotate(30deg); }
+.flower__line__leaf--6 { top: 120px; left: 8px; transform: rotate(45deg); }
